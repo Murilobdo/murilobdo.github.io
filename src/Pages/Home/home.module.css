@@ -1,0 +1,41 @@
+.panel{
+  width: 100vw;
+  height: 100vh;
+  padding: 5px;
+}
+
+.panelBody{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.panelCadastro{
+  height: 95vh;
+  border: 1px solid #ccc;
+  border-radius: 10px 0px 0px 10px;
+  padding-right: 10px; 
+  padding-left: 10px; 
+}
+
+.panelTable{
+  height: 95vh;
+  border: 1px solid #ccc;
+  border-radius: 0px 10px 10px 0px;
+  padding-right: 10px; 
+  padding-left: 10px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textCenter{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+

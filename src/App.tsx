@@ -1,0 +1,25 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Routes from './Routes';
+import { AuthProvider } from './Context/auth';
+
+function App() {
+  return(
+    <AuthProvider>
+       <Routes />
+       <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover/>
+    </AuthProvider>
+  );
+}
+
+export default App;

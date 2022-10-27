@@ -1,0 +1,14 @@
+.panel{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    padding: 30px;
+    border: 1px solid #ababab;
+    background-color: #ccc;
+    border-radius: 20px;
+    width: 30%;
+}
