@@ -27,8 +27,7 @@ const Home: FC<IHome> = () => {
         return data;
       }
     
-      fetchData()
-          .then((response:any) => {
+      fetchData().then((response:any) => {
               setListUsers(response.data.data);
               setListFilterUsers(response.data.data);
               setReload(false);

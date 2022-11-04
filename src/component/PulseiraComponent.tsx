@@ -16,32 +16,29 @@ const PulseiraComponent: FC<IPulseiraComponent> = (props) => {
     
     return(
         <div>
-            <Row >
+            <Row>
                 <div ref={el => contentRef = el} style={{
                     textAlign: 'center',
-                    marginLeft: '50px',
-                    width: '120px',
-                    height:'330px',
                     display: 'flex',
-                    justifyContent: 'end'
+                    height: '300px'
                 }}>
-                    <div>
+                    <div style={{marginRight: '20px', marginTop: '0px', fontSize: '20px'}}>
                         <p style={{transform: 'rotate(90deg)', padding: '12px', paddingLeft: '10px'}}>
                             <b>Nome:<br/>
-                            </b><span style={{fontSize: '10px'}}>{props.fullName?.split(" ")[0]}</span>
+                            </b><span style={{fontSize: '14px'}}>{props.fullName?.split(" ")[0]}</span>
                         </p>
 
-                        <p style={{transform: 'rotate(90deg)', padding: '12px', paddingLeft: '0px'}}>
+                        <p style={{transform: 'rotate(90deg)', padding: '12px', paddingLeft: '10px'}}>
                             <b>CPF/RG:<br/>
-                            </b><span style={{fontSize: '10px'}}>{props.cpf}</span>
+                            </b><span style={{fontSize: '14px'}}>{props.cpf}</span>
                         </p>
 
-                        <p style={{transform: 'rotate(90deg)', padding: '10px', paddingLeft: '0px'}}>
+                        <p style={{transform: 'rotate(90deg)', padding: '12px', paddingLeft: '10px'}}>
                             <b>Função:<br/>
-                            </b><span style={{fontSize: '10px'}}>{props.function}</span>
+                            </b><span style={{fontSize: '14px'}}>{props.function}</span>
                         </p>
                     
-                        <QRCode value={props.codeNumber.toString()} size={60} style={{margin: "20px"}}/>
+                        <QRCode value={props.codeNumber.toString()} size={60}/>
                     </div>
                 </div>
             </Row>

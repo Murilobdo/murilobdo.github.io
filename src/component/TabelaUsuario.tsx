@@ -280,14 +280,14 @@ const TabelaUsuario: FC<ITabelaUsuario> = (props) => {
                 (    
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Body>
-                        <PulseiraComponent
-                            codeNumber={selectUser.codeNumber}
-                            fullName={selectUser.fullName}
-                            cpf={selectUser.cpf}
-                            function={selectUser.function}/>
+                            <PulseiraComponent
+                                codeNumber={selectUser.codeNumber}
+                                fullName={selectUser.fullName}
+                                cpf={selectUser.cpf}
+                                function={selectUser.function}/>
                         </Modal.Body>
                         <Button variant="secondary" onClick={handleClose}>
-                            Close
+                            Fechar
                         </Button>
                     </Modal>
                 ): ''}
